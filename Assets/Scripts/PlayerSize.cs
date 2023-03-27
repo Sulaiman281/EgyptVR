@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerSize : MonoBehaviour
 {
+    [SerializeField] private bool allowToUse;
     [Header("Input")] [SerializeField] private InputAction leftGrabAction;
     [SerializeField] private InputAction rightGrabAction;
 
@@ -41,6 +42,7 @@ public class PlayerSize : MonoBehaviour
      */
     private void VerifyScale()
     {
+        if (!allowToUse) return;
         playerObj.transform.localScale = Vector3.one * (holdingLeftGrab && holdingRightGrab ? maxScale : 1);
     }
 }
