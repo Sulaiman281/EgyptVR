@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 1423093648}
-  m_MoveSpeed: 1
+  m_MoveSpeed: 2.5
   m_EnableStrafe: 1
   m_EnableFly: 0
   m_UseGravity: 1
@@ -132,7 +132,7 @@ PrefabInstance:
     - target: {fileID: 5345161103051969296, guid: 984f42674be4fc14a9b6e49219eba40f,
         type: 3}
       propertyPath: m_Name
-      value: XR Origin
+      value: XR Origin Movable
       objectReference: {fileID: 0}
     - target: {fileID: 5345161103051969298, guid: 984f42674be4fc14a9b6e49219eba40f,
         type: 3}
@@ -199,6 +199,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.75
       objectReference: {fileID: 0}
+    - target: {fileID: 5345161104473305488, guid: 984f42674be4fc14a9b6e49219eba40f,
+        type: 3}
+      propertyPath: m_ValidColorGradient.key0.a
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 984f42674be4fc14a9b6e49219eba40f, type: 3}
 --- !u!1 &6818676154570946808 stripped
@@ -225,6 +230,20 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1423093648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6818676154570946808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a5df2202a8b96488c744be3bd0c33e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Timeout: 10
+  m_XROrigin: {fileID: 6818676154570946810}
 --- !u!114 &1423093649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,20 +259,6 @@ MonoBehaviour:
   m_LocomotionProvider: {fileID: 1303848431}
   m_MinHeight: 0
   m_MaxHeight: Infinity
---- !u!114 &1423093648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6818676154570946808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03a5df2202a8b96488c744be3bd0c33e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Timeout: 10
-  m_XROrigin: {fileID: 6818676154570946810}
 --- !u!114 &6818676154570946810 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5345161103051969298, guid: 984f42674be4fc14a9b6e49219eba40f,
