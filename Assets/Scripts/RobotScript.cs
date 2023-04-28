@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.Playables;
 
 public class RobotScript : MonoBehaviour
@@ -9,6 +10,7 @@ public class RobotScript : MonoBehaviour
     [SerializeField] private TMP_Text instructionText;
     [SerializeField] private PlayableDirector director;
     [SerializeField] private Transform playerTarget;
+    [SerializeField] private NavMeshAgent aiAgent;
     public void SetRobotInstructionText(string txt)
     {
         instructionText.text = txt;
@@ -25,7 +27,11 @@ public class RobotScript : MonoBehaviour
         if (dist > 5)
         {
             transform.LookAt(playerTarget.position, Vector3.up);
-            
+            aiAgent.SetDestination(playerTarget.position);
+        }
+        else
+        {
+            aiAgent.Stop();
         }
     }
 

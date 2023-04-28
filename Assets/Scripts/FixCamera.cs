@@ -1,18 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class FixCamera : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Canvas canvas;
+    private void OnValidate()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(canvas == null)
+            if (TryGetComponent(out canvas))
+            {
+                if (canvas.worldCamera == null)
+                {
+                    canvas.worldCamera = Camera.main;
+                }
+            }
     }
 }
