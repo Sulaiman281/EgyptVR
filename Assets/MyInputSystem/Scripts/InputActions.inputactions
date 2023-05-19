@@ -1,0 +1,953 @@
+{
+    "name": "InputActions",
+    "maps": [
+        {
+            "name": "LeftHand",
+            "id": "2ab872bb-880e-4826-8b49-6ffc7e5fda2f",
+            "actions": [
+                {
+                    "name": "JoyStickMove",
+                    "type": "Value",
+                    "id": "7a7f4365-453e-42e5-8ccb-ebb317f3964f",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "TriggerTouchTap",
+                    "type": "Button",
+                    "id": "bc4ff3d1-e5e6-4bea-86e6-2c59c882cbd8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Tap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TriggerTouchHold",
+                    "type": "Button",
+                    "id": "398dc36f-45e4-4088-baf7-5b1653cc5d99",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TriggerTouchMultiTap",
+                    "type": "Button",
+                    "id": "1b6e94f8-cc3c-42f7-8243-b3c736df623c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "MultiTap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TriggerPressedTap",
+                    "type": "Button",
+                    "id": "f776da5b-9f67-4713-9591-df9fbf392591",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Tap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TriggerPressHold",
+                    "type": "Button",
+                    "id": "cb9354a2-d4d4-4ba2-893a-af5b797413b9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TriggerPressMultiTap",
+                    "type": "Button",
+                    "id": "1b023718-ea97-4025-b664-3926699d4f94",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "MultiTap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "GripPressTap",
+                    "type": "Button",
+                    "id": "271c3b4b-88fd-48f1-96a4-93b244e9dab9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Tap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "GripPressHold",
+                    "type": "Button",
+                    "id": "80d16859-498e-4b89-a777-024f67832d8e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "GripPressMultiTap",
+                    "type": "Button",
+                    "id": "aadb533c-3452-43db-af8f-416f01cc01d5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "MultiTap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PrimaryTouchTap",
+                    "type": "Button",
+                    "id": "6acaa0ec-14a7-44fa-9f8b-06e7e0294bef",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Tap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PrimaryTouchHold",
+                    "type": "Button",
+                    "id": "897f0ce2-5f10-4e5f-a9ea-6e4c639bab0b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PrimaryTouchMultiTap",
+                    "type": "Button",
+                    "id": "f9a5eb8a-e248-4fd8-a6ec-6a37ca67403a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "MultiTap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PrimaryPressTap",
+                    "type": "Button",
+                    "id": "920014df-36d9-4d3d-b1f8-5e10c91f1c8a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Tap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PrimaryPressHold",
+                    "type": "Button",
+                    "id": "6aa01e84-0ab4-434e-b0f8-28c59b7cfd6b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PrimaryPressMultiTap",
+                    "type": "Button",
+                    "id": "a9a77b22-9309-4242-b760-b03949f101b5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "MultiTap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SecondaryTouchTap",
+                    "type": "Button",
+                    "id": "6a019230-7736-4d88-bf3e-5ab1e98485ca",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Tap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SecondaryTouchHold",
+                    "type": "Button",
+                    "id": "b83ef2b3-1604-44b3-97ef-6c574b08ad43",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SecondaryTouchMultiTap",
+                    "type": "Button",
+                    "id": "7a26b85d-47ba-48fa-84c0-ac29b2318582",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "MultiTap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SecondaryPressedTap",
+                    "type": "Button",
+                    "id": "babf6a60-ceb2-48dd-b345-d79591ba0e97",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Tap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SecondaryPressedHold",
+                    "type": "Button",
+                    "id": "a3842172-e766-4355-bc24-a3c4976195ee",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SecondaryPressedMultiTap",
+                    "type": "Button",
+                    "id": "ac9145e6-8a99-456c-a2e1-126d2668714e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "MultiTap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Menu",
+                    "type": "Button",
+                    "id": "0e7562de-64ba-4815-96a6-6e444c57480b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "4da352a1-e533-4c52-8cba-da702ec800c3",
+                    "path": "<XRController>{LeftHand}/triggerTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TriggerTouchTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "28d7610b-cf91-48ec-98dd-f971878b5d0e",
+                    "path": "<XRController>{LeftHand}/joystick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JoyStickMove",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "96b6af88-8158-441b-8987-c9882a6d3d27",
+                    "path": "<XRController>{LeftHand}/primaryTouch",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PrimaryTouchTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5d0c28ff-4afd-4b48-a80b-84d296af3863",
+                    "path": "<XRController>{LeftHand}/primaryTouch",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PrimaryTouchMultiTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "95363ff7-5c1f-4633-9fcc-7f3cf65e772a",
+                    "path": "<XRController>{LeftHand}/primaryTouch",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PrimaryTouchHold",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9ae72628-85ba-438f-8a36-bb37038cf401",
+                    "path": "<XRController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PrimaryPressMultiTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f1e9d1be-9168-4b57-af68-b186aab6a322",
+                    "path": "<XRController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PrimaryPressTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c389ed5c-23e9-4004-8db9-5c323274e911",
+                    "path": "<XRController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PrimaryPressHold",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "98365660-d2ca-4ecd-80fe-746999c7d936",
+                    "path": "<XRController>{LeftHand}/secondaryTouch",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SecondaryTouchTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a63d2cf6-a599-49fe-86fd-9a22af2bc088",
+                    "path": "<XRController>{LeftHand}/secondaryTouch",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SecondaryTouchHold",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "143eacea-227c-40e8-be3e-e1916e8cf9a7",
+                    "path": "<XRController>{LeftHand}/menuButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c601e0ef-3bb2-4596-b287-e4c227a43e75",
+                    "path": "<XRController>{LeftHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GripPressTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b4f3e63b-0252-4d8f-abf4-f2a27fa3ae70",
+                    "path": "<Keyboard>/g",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GripPressTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e9a2479d-c58e-4848-a80f-94474782f31f",
+                    "path": "<XRController>{LeftHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GripPressMultiTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bc6c1848-8325-4a0b-855a-180bd33bf3f6",
+                    "path": "<XRController>{LeftHand}/triggerTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TriggerTouchHold",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bb5d0a78-832e-4f81-95d6-b84424cea829",
+                    "path": "<XRController>{LeftHand}/triggerTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TriggerTouchMultiTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4be500e6-4b57-48e8-8dc5-5abd02e28db3",
+                    "path": "<XRController>{LeftHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TriggerPressedTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6a856ba2-4505-426a-95e8-8f9168376483",
+                    "path": "<XRController>{LeftHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TriggerPressHold",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4fd6229a-6d97-490a-be19-1a84bceb3a6d",
+                    "path": "<XRController>{LeftHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TriggerPressMultiTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "45a244c5-5b9c-4863-abca-c1c6d83a4dc0",
+                    "path": "<XRController>{LeftHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GripPressHold",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8749541f-18bf-448a-a2a2-4861c6820009",
+                    "path": "<XRController>{LeftHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SecondaryPressedHold",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fa48cbf6-1b4a-42a2-95d2-a65f0a81cd1e",
+                    "path": "<XRController>{LeftHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SecondaryPressedMultiTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "650d4010-1db9-4ce1-bb66-88f6dc097144",
+                    "path": "<XRController>{LeftHand}/secondaryTouch",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SecondaryTouchMultiTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d7e43279-46fe-4fd4-9676-baa112346f5d",
+                    "path": "<XRController>{LeftHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SecondaryPressedTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "RightHand",
+            "id": "98212f97-32f6-4eac-866c-8a7473352e0d",
+            "actions": [
+                {
+                    "name": "JoyStickMove",
+                    "type": "Value",
+                    "id": "2aad7676-33bb-4e6e-a991-7a9de5f7a729",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "TriggerTouchTap",
+                    "type": "Button",
+                    "id": "7e59019f-6da6-4ca8-a42f-84f63c8b4d07",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Tap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TriggerTouchHold",
+                    "type": "Button",
+                    "id": "9e2b3235-999f-4bc3-8707-d5576e7dfde4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TriggerTouchMultiTap",
+                    "type": "Button",
+                    "id": "f6587fae-358c-4c66-9801-eb6a90da154d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "MultiTap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TriggerPressedTap",
+                    "type": "Button",
+                    "id": "ddcc497f-ccae-4143-a664-b354ea534d49",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Tap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TriggerPressHold",
+                    "type": "Button",
+                    "id": "aff0fc09-c750-4110-b3a6-76362b123413",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TriggerPressMultiTap",
+                    "type": "Button",
+                    "id": "37f0bd7e-2c8f-4a2f-89cf-07d70b8805d6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "MultiTap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "GripPressTap",
+                    "type": "Button",
+                    "id": "b53d08b9-128e-4095-9da5-f14a527d5510",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Tap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "GripPressHold",
+                    "type": "Button",
+                    "id": "d7a2c235-67f4-4ce4-be03-3686216cb7a5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "GripPressMultiTap",
+                    "type": "Button",
+                    "id": "e9228ab7-1df5-4e06-bd3c-f54e30142fee",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "MultiTap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PrimaryTouchTap",
+                    "type": "Button",
+                    "id": "6d2be7eb-30cb-431b-9a7f-b0b5b14ce5d5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Tap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PrimaryTouchHold",
+                    "type": "Button",
+                    "id": "7f6233a8-2721-4067-a129-8817dca0e30b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PrimaryTouchMultiTap",
+                    "type": "Button",
+                    "id": "c3f78ec8-682d-457d-941b-89bbe9f7b581",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "MultiTap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PrimaryPressTap",
+                    "type": "Button",
+                    "id": "41c7dedd-8a9e-4172-ba30-c44edb27f230",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Tap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PrimaryPressHold",
+                    "type": "Button",
+                    "id": "d1a73e40-b477-40bf-a981-0a8ead063215",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PrimaryPressMultiTap",
+                    "type": "Button",
+                    "id": "6c6cfb0b-0371-40e7-9445-c0c07ee5a911",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "MultiTap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SecondaryTouchTap",
+                    "type": "Button",
+                    "id": "7cad86c4-400a-4527-acbd-7d1c0500e909",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Tap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SecondaryTouchHold",
+                    "type": "Button",
+                    "id": "d4d579f0-57ea-4f3f-844d-f2c80f147528",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SecondaryTouchMultiTap",
+                    "type": "Button",
+                    "id": "68857bb5-c779-45fd-96b6-f91928b867f3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "MultiTap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SecondaryPressedMultiTap",
+                    "type": "Button",
+                    "id": "4ca35fed-dc4f-4143-9751-b37be933e7f7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "MultiTap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SecondaryPressedHold",
+                    "type": "Button",
+                    "id": "6dbbd5f6-821b-4fe1-a808-d27ff8af8701",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SecondaryPressedTap",
+                    "type": "Button",
+                    "id": "ef90cda3-e548-4ea8-9101-8f531a7df63b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Tap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Menu",
+                    "type": "Button",
+                    "id": "5d1e4487-5b58-4cee-a985-0880a3ec8118",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5f3d8b9e-ae5f-485c-b1f8-4645e8fb0244",
+                    "path": "<XRController>{RightHand}/triggerTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TriggerTouchTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a7ffaa10-a234-47b7-8417-4b2cf8e20edc",
+                    "path": "<XRController>{RightHand}/triggerTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TriggerTouchHold",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d242f455-29d6-4c9b-835e-bb1460d9a24d",
+                    "path": "<XRController>{RightHand}/triggerTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TriggerTouchMultiTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "07046a4c-d7f9-4d21-8ae5-9ddd787cc3d0",
+                    "path": "<XRController>{RightHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TriggerPressHold",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "95fbde0f-7a92-439c-a905-31e978ddbc31",
+                    "path": "<XRController>{RightHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TriggerPressMultiTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8af68f4a-d207-4e71-a671-bafb0e4ec179",
+                    "path": "<XRController>{RightHand}/joystick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JoyStickMove",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b6186519-617c-44ef-979b-cf2bb1581db4",
+                    "path": "<XRController>{RightHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TriggerPressedTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d45cfb24-069e-4449-b96e-a995ea4594e7",
+                    "path": "<XRController>{RightHand}/primaryTouch",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PrimaryTouchTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d25624b5-2a93-4841-967e-0698f2957956",
+                    "path": "<XRController>{RightHand}/primaryTouch",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PrimaryTouchMultiTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8e902bb9-6543-4907-9d05-adc8098331be",
+                    "path": "<XRController>{RightHand}/primaryTouch",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PrimaryTouchHold",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f2cfdaa5-40bd-4e6b-96b4-0512117f7dd7",
+                    "path": "<XRController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PrimaryPressMultiTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0dc45a75-1fea-461d-9231-f85a36637058",
+                    "path": "<XRController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PrimaryPressTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "324e0b72-8587-4b24-ae01-b23f30e0b501",
+                    "path": "<XRController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PrimaryPressHold",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "39c20e39-b7fd-4220-84f7-36d84751dc83",
+                    "path": "<XRController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SecondaryTouchTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "15f133c2-a0b6-4e3e-b855-243a95321690",
+                    "path": "<XRController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SecondaryTouchMultiTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9c402b39-9347-49ea-bed0-69a528c35da2",
+                    "path": "<XRController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SecondaryTouchHold",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8f0117ab-c95c-44d4-8886-d51841059fa0",
+                    "path": "<XRController>{RightHand}/menu",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e3e64d24-8ebc-44f9-a804-a51a4cc35451",
+                    "path": "<XRController>{RightHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GripPressHold",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "11684a46-edd9-4df8-9339-06771d72d11d",
+                    "path": "<XRController>{RightHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GripPressTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f0cdde76-86f7-4ab9-bc39-9d68826d8b65",
+                    "path": "<XRController>{RightHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GripPressMultiTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0df3ba51-d36b-49af-a05a-659639b597d5",
+                    "path": "<XRController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SecondaryPressedTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "593407a6-6fd3-4efc-baec-0c22c0136196",
+                    "path": "<XRController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SecondaryPressedHold",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cf0a2b34-e642-44e6-8091-b237ebf50b38",
+                    "path": "<XRController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SecondaryPressedMultiTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

@@ -1,19 +1,52 @@
+using System;
+using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class AvatarAnimation : MonoBehaviour
 {
-    [Header("LeftHand")] [SerializeField]
-    private Animator leftHandAnimator;
+    [Header("LeftHand")] [SerializeField] private Animator leftHandAnimator;
     [SerializeField] private InputAction triggerInputL;
     [SerializeField] private InputAction grabInputL;
-    
-    [Header("RightHand")]
-    [SerializeField] private Animator rightHandAnimator;
+
+    [Header("RightHand")] [SerializeField] private Animator rightHandAnimator;
     [SerializeField] private InputAction triggerInputR;
     [SerializeField] private InputAction grabInputR;
 
     private void Start()
+    {
+        if (TryGetComponent<NetworkObject>(out var networkObj))
+        {
+            if (networkObj.IsOwner)
+            {
+                EventSetup();
+            }
+        }
+        else
+        {
+            EventSetup();
+            Debug.Log("Setup Avatar Animations");
+        }
+
+    }
+
+    private void OnEnable()
+    {
+        if (TryGetComponent<NetworkObject>(out var networkObj))
+        {
+            if (networkObj.IsOwner)
+            {
+                EventSetup();
+            }
+        }
+        else
+        {
+            EventSetup();
+            Debug.Log("Setup Avatar Animations");
+        }
+    }
+
+    private void EventSetup()
     {
         { // left hand animation setup
             triggerInputL.Enable();
@@ -31,5 +64,21 @@ public class AvatarAnimation : MonoBehaviour
             grabInputR.started += _ => { rightHandAnimator.SetFloat("Grab", 1); };
             grabInputR.canceled += _ => { rightHandAnimator.SetFloat("Grab", 0); };
         }
+    }
+
+    private void OnDisable()
+    {
+        triggerInputL.Disable();
+        grabInputL.Disable();
+        triggerInputR.Disable();
+        grabInputR.Disable();
+    }
+
+    private void OnDestroy()
+    {
+        triggerInputL.Disable();
+        grabInputL.Disable();
+        triggerInputR.Disable();
+        grabInputR.Disable();
     }
 }

@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 24
-  productGUID: 6f002c93fcacf4a4c8aa6ef1d73f3a9c
+  productGUID: 5c43a37f197587d4ea0dc30cb9d4659a
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: WitShells
-  productName: EgyptVR
+  productName: EgyptVR_Multiplayer
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -155,7 +155,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.WitShells.egyptVR
+    Android: com.witshells.egypt
     Standalone: com.DefaultCompany.com.unity.template.vr
   buildNumber:
     Standalone: 0
@@ -698,12 +698,14 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: UNITY_CCU;CURVEDUI_UNITY_XR;CURVEDUI_TMP;READY_PLAYER_ME;CURVEDUI_NEW_INPUT_MODULE
+    Android: UNITY_CCU;CURVEDUI_NEW_INPUT_MODULE;CURVEDUI_TMP
+    PS5: UNITY_CCU;CURVEDUI_TMP;CURVEDUI_NEW_INPUT_MODULE
+    Standalone: UNITY_CCU;CURVEDUI_TMP;CURVEDUI_NEW_INPUT_MODULE
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
     Android: 1
-    Standalone: 1
+    Standalone: 0
   il2cppCompilerConfiguration: {}
   managedStrippingLevel:
     Android: 1
@@ -792,13 +794,7 @@ PlayerSettings:
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
   cloudServicesEnabled:
-    Build: 0
-    Collab: 0
-    Game Performance: 0
-    Purchasing: 0
-    UDP: 0
     UNet: 1
-    Unity Ads: 0
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 

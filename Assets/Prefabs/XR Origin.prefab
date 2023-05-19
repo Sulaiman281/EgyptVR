@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5345161103051969299}
   - component: {fileID: 5345161103051969298}
   - component: {fileID: 5345161103051969297}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: XR Origin
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1130,7 +1130,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.03
+  near clip plane: 0.2
   far clip plane: 100
   field of view: 60
   orthographic: 0

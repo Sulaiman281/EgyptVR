@@ -1,0 +1,266 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7166952778375596913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7166952778375596912}
+  - component: {fileID: 7166952778375596915}
+  m_Layer: 0
+  m_Name: InputManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7166952778375596912
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7166952778375596913}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7166952778375596915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7166952778375596913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d541b12339c4bd48b5f21bbd3b9e3f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftController:
+    hand: 0
+    triggerPressedInput:
+      m_Name: Trigger Pressed Input
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 7b49cdcf-85a9-4d21-989a-79e7fecb5d80
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: cb921b0c-fa2f-42ca-b2de-c95929d5083b
+        m_Path: <XRController>{LeftHand}/triggerPressed
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Trigger Pressed Input
+        m_Flags: 0
+      m_Flags: 0
+    gripPressedInput:
+      m_Name: Grip Pressed Input
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 28dcfd70-18be-491f-818d-2e678a9b9c36
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: 06e3d6dc-865d-45a7-89a6-a410622d3833
+        m_Path: <XRController>{LeftHand}/gripPressed
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Grip Pressed Input
+        m_Flags: 0
+      m_Flags: 0
+    primaryPressedInput:
+      m_Name: Primary Pressed Input
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: c87ad8b6-53f5-4eb2-94cd-c31b8dc8ebc1
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: 0e1f77b3-2ca5-45c5-b921-cc31362437c7
+        m_Path: <XRController>{LeftHand}/primaryButton
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Primary Pressed Input
+        m_Flags: 0
+      m_Flags: 0
+    secondaryPressedInput:
+      m_Name: Secondary Pressed Input
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 69d116bf-5d9a-4196-aaa0-97830e036dcf
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: 7d1f46cc-3fcc-44e8-9300-88488b6d6e8c
+        m_Path: <XRController>{LeftHand}/secondaryButton
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Secondary Pressed Input
+        m_Flags: 0
+      m_Flags: 0
+    joyStickMoveInput:
+      m_Name: Joy Stick Move Input
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: c8e8c077-5dcc-488c-a5c0-2641937a132f
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: ad2eb46e-78b0-4452-9db4-d94b8bd0f13c
+        m_Path: <XRController>{LeftHand}/joystick
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Joy Stick Move Input
+        m_Flags: 0
+      m_Flags: 0
+    menuPressInput:
+      m_Name: Menu Press Input
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 7e597f73-bdfa-4bc2-80d2-4ae5bbb8bcce
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: 56d0ce9b-d8c9-4d45-b436-507b40b6e69e
+        m_Path: <XRController>{LeftHand}/menu
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Menu Press Input
+        m_Flags: 0
+      m_Flags: 0
+    joystickMove: {x: 0, y: 0}
+    triggerPressed: 0
+    gripPressed: 0
+    primaryPressed: 0
+    secondaryPressed: 0
+    menuPress: 0
+  rightController:
+    hand: 1
+    triggerPressedInput:
+      m_Name: Trigger Pressed Input
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 37f7e9f9-e3bb-4804-b498-3d778a6f5451
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: 9312a11d-a690-426f-9bbf-103fd78e731f
+        m_Path: <XRController>{RightHand}/triggerPressed
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Trigger Pressed Input
+        m_Flags: 0
+      m_Flags: 0
+    gripPressedInput:
+      m_Name: Grip Pressed Input
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 216bf1b1-be64-4aa4-b7b6-e49ac40da88d
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: b66d69be-72c9-4700-a7eb-be5da804781a
+        m_Path: <XRController>{RightHand}/gripPressed
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Grip Pressed Input
+        m_Flags: 0
+      m_Flags: 0
+    primaryPressedInput:
+      m_Name: Primary Pressed Input
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: a3c5ad65-83af-49ed-9b95-bec65f5c20c0
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: 7aaf1209-c1ab-4f7e-9eb5-931a9bbd4d15
+        m_Path: <XRController>{RightHand}/primaryButton
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Primary Pressed Input
+        m_Flags: 0
+      m_Flags: 0
+    secondaryPressedInput:
+      m_Name: Secondary Pressed Input
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 45c85951-3a84-4bf8-bd6d-412e9f2d1f6c
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: 7d6fe41f-918b-4689-bedb-6c20952a6a06
+        m_Path: <XRController>{RightHand}/secondaryButton
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Secondary Pressed Input
+        m_Flags: 0
+      m_Flags: 0
+    joyStickMoveInput:
+      m_Name: Joy Stick Move Input
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: a162e289-68ff-4afb-bc26-75cd0977f243
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: fefd7c58-415f-4ff7-8bd9-81b76d4f4336
+        m_Path: <XRController>{RightHand}/joystick
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Joy Stick Move Input
+        m_Flags: 0
+      m_Flags: 0
+    menuPressInput:
+      m_Name: Menu Press Input
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 82b57e89-91fa-49c5-be2b-5027895c3eb5
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: 1eed696c-ec37-4fb6-8d29-3462b7dd2549
+        m_Path: <XRController>{RightHand}/menu
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Menu Press Input
+        m_Flags: 0
+      m_Flags: 0
+    joystickMove: {x: 0, y: 0}
+    triggerPressed: 0
+    gripPressed: 0
+    primaryPressed: 0
+    secondaryPressed: 0
+    menuPress: 0

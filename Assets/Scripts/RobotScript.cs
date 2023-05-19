@@ -1,55 +1,62 @@
-using TMPro;
+using System;
 using UnityEngine;
-using UnityEngine.AI;
-using UnityEngine.Playables;
+using UnityEngine.InputSystem;
 
 public class RobotScript : MonoBehaviour
 {
     [SerializeField] private Animator animator;
-    [SerializeField] private PlayableAsset[] playerDirectories;
-    [SerializeField] private TMP_Text instructionText;
-    [SerializeField] private PlayableDirector director;
-    [SerializeField] private Transform playerTarget;
-    [SerializeField] private NavMeshAgent aiAgent;
-    public void SetRobotInstructionText(string txt)
+    [SerializeField] private AudioClip audioClip;
+    [SerializeField] private GameObject hintObject;
+
+    [SerializeField] private PlayerInput.ActionEvent onDialogFinished;
+
+    public bool isGivingLesson;
+    public bool isLessonComplete;
+
+    private bool _inSideRadius;
+    private bool _isPlaying;
+
+    private void Start()
     {
-        instructionText.text = txt;
+        InputManager.instance.leftController.onTriggerPressStart.AddListener(_=> OnTriggerPress());
+        InputManager.instance.rightController.onTriggerPressStart.AddListener(_=> OnTriggerPress());
     }
 
-    public void ActionResponse(int action)
+    private void OnTriggerEnter(Collider other)
     {
-        animator.SetInteger("ResponseAction", action);
+        if (!other.CompareTag("Player")) return;
+        _inSideRadius = true;
+        hintObject.SetActive(true);
     }
 
-    private void Update()
+    private void OnValidate()
     {
-        var dist = Vector3.Distance(transform.position, playerTarget.position);
-        if (dist > 5)
-        {
-            transform.LookAt(playerTarget.position, Vector3.up);
-            aiAgent.SetDestination(playerTarget.position);
-        }
-        else
-        {
-            aiAgent.Stop();
-        }
+        if (animator == null) animator = GetComponent<Animator>();
     }
 
-
-    public void Pause(bool value = true)
+    public void OnTriggerPress()
     {
-        if (value)
-        {
-            director.Pause();
-        }
-        else
-        {
-            director.Resume();
-        }
+        if (!_inSideRadius) return;
+        if (audioClip == null) return;
+        if (isLessonComplete && isGivingLesson) return;
+        if (_isPlaying) return;
+        AudioSource.PlayClipAtPoint(audioClip, transform.position, 1f);
+        _isPlaying = true;
+        Invoke(nameof(InvokeDialogFinished), audioClip.length);
+        isLessonComplete = true;
+        if (isGivingLesson)
+            GameManager.instance.localPlayer.LessonTaken();
     }
 
-    public void StopDirector()
+    private void InvokeDialogFinished()
     {
-        director.Stop();
+        _isPlaying = false;
+        onDialogFinished.Invoke(default);
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        _inSideRadius = false;
+        hintObject.SetActive(false);
     }
 }

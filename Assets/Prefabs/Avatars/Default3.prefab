@@ -460,8 +460,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   head:
     playerTarget: {fileID: 0}
-    bodyTarget: {fileID: 6426169564063272121}
-    posOffset: {x: 0, y: -0.07, z: -0.1}
+    bodyTarget: {fileID: 5926149893800291793}
+    posOffset: {x: 0, y: -0.1, z: 0}
     rotOffset: {x: 0, y: 0, z: 0}
   leftHand:
     playerTarget: {fileID: 0}

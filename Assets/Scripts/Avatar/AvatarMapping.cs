@@ -9,9 +9,9 @@ public class AvatarMapping : MonoBehaviour
 
     [SerializeField] private Transform headBodyMap;
     [SerializeField] private Vector3 bodyOffSet;
+    [SerializeField] private bool hasMapped = false;
 
     public PlayerMapRef mapRef;
-    private bool _hasMapped = false;
 
 
     private void Start()
@@ -39,12 +39,12 @@ public class AvatarMapping : MonoBehaviour
         if (leftHand.playerTarget == null) leftHand.playerTarget = mapRef.leftHand;
         if (rightHand.playerTarget == null) rightHand.playerTarget = mapRef.rightHand;
         
-        _hasMapped = true;
+        hasMapped = true;
     }
 
     private void Update()
     {
-        if (!_hasMapped) return;
+        if (!hasMapped) return;
         headBodyMap.position = head.bodyTarget.position + bodyOffSet;
         headBodyMap.rotation = head.bodyTarget.rotation;
         head.MapTransform();

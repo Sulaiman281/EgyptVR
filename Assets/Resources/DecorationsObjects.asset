@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0925848db06a4c0784a4de76f04ca634, type: 3}
+  m_Name: DecorationsObjects
+  m_EditorClassIdentifier: 
+  models:
+  - modelName: Bench
+    modelSprite: {fileID: 21300000, guid: 6ffb3295ce3b1824e93f472a172523cd, type: 3}
+    modelPrefab: {fileID: 6422509625728425908, guid: 5b2c54b37dd75e0468ea2439aa5fa0b1,
+      type: 3}
+  - modelName: Bucket
+    modelSprite: {fileID: 21300000, guid: d035f4fb0536f984f97736fc998f4052, type: 3}
+    modelPrefab: {fileID: 4836058409364329716, guid: dbb6dc53260bcd348952b6a1043c5059,
+      type: 3}
+  - modelName: Pyramid
+    modelSprite: {fileID: 21300000, guid: a59d6dabe0c028148834a3c723442942, type: 3}
+    modelPrefab: {fileID: 2834516712964487595, guid: c22184c57c5967241a06070fe3c75f8e,
+      type: 3}
+  - modelName: House1
+    modelSprite: {fileID: 21300000, guid: 082a39be94f0b2647a55d2528de8906a, type: 3}
+    modelPrefab: {fileID: 2428785149383325425, guid: e9159c5a14e814b439f4c0b22bf037b5,
+      type: 3}
+  - modelName: House2
+    modelSprite: {fileID: 21300000, guid: 1560b337752986441b956db934552549, type: 3}
+    modelPrefab: {fileID: 6654016208889021807, guid: 56374074dcee1784a9753d5ca7201444,
+      type: 3}
+  - modelName: House3
+    modelSprite: {fileID: 21300000, guid: 813b67292a8d972458bea270cde1e654, type: 3}
+    modelPrefab: {fileID: 5307806339468757732, guid: 4dc66cbae03f81e4ab2046c1d2008999,
+      type: 3}
+  - modelName: House4
+    modelSprite: {fileID: 21300000, guid: f84d5a5d157fc7b44a7695ed8e2cc1a3, type: 3}
+    modelPrefab: {fileID: 7858558096410405682, guid: 9572d6c1ca69ef440ad23804f2f99a1b,
+      type: 3}
+  - modelName: Palm Tree
+    modelSprite: {fileID: 21300000, guid: a84d2d44620bf414ba2129e471baed08, type: 3}
+    modelPrefab: {fileID: 2956711957443318528, guid: 0d948988cb3342640b865cfc74a4b6e7,
+      type: 3}
+  - modelName: Status Spnix
+    modelSprite: {fileID: 21300000, guid: 8d594e662df817e459deecfe02289ce9, type: 3}
+    modelPrefab: {fileID: 3806147571663512924, guid: 39043c8d4a0198d42b451d6aae2d5f46,
+      type: 3}
+  - modelName: Tent
+    modelSprite: {fileID: 21300000, guid: b150c8aa2d7572548be85f6514948cf0, type: 3}
+    modelPrefab: {fileID: 309152025889352601, guid: 2d39e2ef71d9d244388fc61701bb8047,
+      type: 3}
+  - modelName: TutMask
+    modelSprite: {fileID: 21300000, guid: a7a16a602c283e14790a80f6647ca6ef, type: 3}
+    modelPrefab: {fileID: 9022784105965880807, guid: 35b54caa91cfc784db759e4f9ca13b65,
+      type: 3}

@@ -204,7 +204,8 @@ PrefabInstance:
       propertyPath: m_ValidColorGradient.key0.a
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9185734418946544791, guid: 984f42674be4fc14a9b6e49219eba40f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 984f42674be4fc14a9b6e49219eba40f, type: 3}
 --- !u!1 &6818676154570946808 stripped
 GameObject:

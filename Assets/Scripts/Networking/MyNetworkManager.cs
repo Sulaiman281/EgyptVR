@@ -4,13 +4,6 @@ public class MyNetworkManager : NetworkManager
 {
     public bool classRoomHost;
 
-    private NetworkEvents _events;
-
-    private void Start()
-    {
-        _events = GetComponent<NetworkEvents>();
-    }
-
     public void StartClass()
     {
         classRoomHost = true;
@@ -22,15 +15,4 @@ public class MyNetworkManager : NetworkManager
         classRoomHost = false;
         StartClient();
     }
-
-    private void OnServerInitialized()
-    {
-        _events.onServerStarted.Invoke(default);
-    }
-
-    private void OnConnectedToServer()
-    {
-        _events.onClientStarted.Invoke(default);
-    }
-    
 }
